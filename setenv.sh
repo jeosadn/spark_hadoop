@@ -14,3 +14,8 @@ export PATH=$PATH:$HADOOP_HOME/bin
 #Spark
 export SPARK_HOME=$HOME/spark-2.4.3-bin-hadoop2.7
 export PATH=$PATH:$SPARK_HOME/bin
+
+#Launch Hadoop server
+$HADOOP_HOME/sbin/start-dfs.sh
+$HADOOP_HOME/sbin/start-yarn.sh
+$HADOOP_HOME/sbin/mr-jobhistory-daemon.sh start historyserver
